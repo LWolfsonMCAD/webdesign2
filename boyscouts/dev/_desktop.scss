@@ -1,0 +1,66 @@
+//Blue : #003F87;
+//Red : #CE1126;
+
+/************************************
+Desktop version of site
+************************************/
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+div#wrapper {
+	position: relative;
+	width: 100%;
+}
+
+div#header {
+	width: 100%;
+
+		h1 {
+			float: left;
+			width: 20%;
+			margin-top: 5px;
+
+			img {
+				max-width: 200px;
+			}
+		}
+
+		div#main-nav {
+			float: left;
+			width: 79%;
+			padding-top: 90px;
+
+				ul {
+					width: 100%;
+					margin: 0;
+
+						li{
+							float: left;
+							display: inline;
+							width: 17%;
+							text-align: center;
+
+								a {
+									color: #003F87;
+								}
+						}
+
+						li:first-of-type,
+						li:nth-of-type(2) {
+							width: 22%;
+						}
+				}
+
+		}
+}
