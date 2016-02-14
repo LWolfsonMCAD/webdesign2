@@ -4,6 +4,14 @@
 /************************************
 Desktop version of site
 ************************************/
+// @media screen and (min-width: 769px) and (max-width: 1500px) {
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html, 
 body {
 	margin:0;
@@ -19,6 +27,32 @@ h1 {
 	font-weight: 700;
 	letter-spacing: 0.01em;
 	color: #CE1126;
+}
+
+h2 {
+	margin-bottom: 5px;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CE1126;
+}
+
+h3 {
+	margin: 5px 0;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	color: #003F87;
+}
+
+h4 {
+	color: #CE1126;
+}
+
+h5 {
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	color: #000;
 }
 
 ul {
@@ -40,6 +74,23 @@ a {
 	text-decoration: none;
 }
 
+button {
+	padding: 4px 15px;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #fff;
+
+	background-color: #003F87;
+	border: 2px solid #003F87;
+}
+
+button:hover {
+	color: #003F87;
+	background-color: #fff;
+	border: 2px solid #003F87;
+}
+
 div#wrapper {
 	position:relative; /* needed for footer positioning*/
 	margin:0 auto; /* center, not in IE5 */
@@ -51,83 +102,79 @@ div#wrapper {
 
 	border: 1px solid #003F87;
 
-
-	// position: relative;
-	// max-width: 960px;
-	// margin: 0 auto;
-
-	// height:auto !important; real browsers
-	// height:100%; /* IE6: treaded as min-height*/
-
-	// min-height:100%; /* real browsers */
-
 	div#header {
 		position: relative;
 		width: 100%;
 		min-height: 155px;
 
-			h1 {
-				float: left;
-				width: 18%;
-				margin-top: 5px;
 
-				img {
-					max-width: 170px;
-					margin-top: -10px;
-					padding-left: 10px;
-				}
-			}
+		h1 {
+			float: left;
+			width: 18%;
+			margin-top: 5px;
 
-			hr {
-				transform: rotate(-52deg) translateY(-123px) translateX(-293px);
-				width: 57%;
-				border: none;
-				background-color: #003F87;
-				color: #003F87;
+			img {
+				width: 100%;
+				max-width: 170px;
+				margin-top: -10px;
+				padding-left: 10px;
 			}
+		}
+
+		hr {
+			transform: rotate(-52deg) translateY(-123px) translateX(-293px);
+			width: 57%;
+			border: none;
+			background-color: #003F87;
+			color: #003F87;
+		}
 
 		div#main-nav {
 			float: left;
-			width: 81%;
+			width: 82%;
 			margin-bottom: 25px;
 			padding-top: 76px;
 			padding-right: 9px;
 			border-bottom: 1px solid #003F87;
 
-				ul {
-					width: 100%;
-					margin: 0;
+			ul {
+				width: 100%;
+				margin: 0;
 
-						li{
-							float: left;
-							display: inline;
-							width: 17%;
-							margin-bottom: 15px;
-							text-align: right;
+				li{
+					float: left;
+					display: inline;
+					width: 17%;
+					margin-bottom: 15px;
+					text-align: right;
 
-								a {
-									display: block;
-									padding: 10px;
-									color: #003F87;
-								}
-						}
-
-						li:first-of-type,
-						li:nth-of-type(2) {
-							width: 22%;
+						a {
+							display: block;
+							padding: 10px;
+							color: #003F87;
 						}
 				}
+
+				li:first-of-type,
+				li:nth-of-type(2) {
+					width: 22%;
+				}
+
+				li#mobilelogin {
+					display: none;
+				}
+			}
 
 		}
 
-		div#login {
+		div#desktoplogin {
 			position: absolute;
-			top: 10px;
-			right: 10px;
+			top: 1em;
+			right: 20px;
 
-				a {
-					color: #003F87;
-				}
+			a {
+				color: #003F87;
+			}
 		}
 	}
 
@@ -135,30 +182,14 @@ div#wrapper {
 		padding: 1em 1em 5em; /* bottom padding for footer */
 
 		h1 {
-			margin: 0;
+			margin: 5px 0px 25px;
 		}
 
-		div.hp-intro {
-			width: 53%;
-			margin: 10px auto 30px;
-		}
-
-		div.hp-linkblocks {
-			margin: 50px 0;
-			padding-left: 5%;
-			padding-right: 5%;
-
-				.imagelink-row {
-					height: auto;
-					overflow: auto;
-					margin: 20px 0;
-
-					.hp-imagelink {
-						float: left;
-						width: 30%;
-						margin-right: 3%;
-					}
-				}
+		span.learn-more {
+			font-size: 0.9em;
+			font-style: italic;
+			color: #CE1126;
+			cursor: pointer;
 		}
 	}
 
@@ -172,15 +203,8 @@ div#wrapper {
 		color: #003F87;
 		border-top: 1px solid #003F87;
 
-		div#site-info {
-			float: left;
-			width: 39%;
-			padding-top: 10px;
-			padding-left: 2%;
-		}
-
 		div#footer-nav {
-			float: left;
+			float: right;
 			width: 57%;
 			padding-right: 2%;
 				
@@ -201,10 +225,171 @@ div#wrapper {
 				}
 
 				li.licensing-link {
-					width: 28%;
+					width: 30%;
 				}
 			}
 		}
 
+		div#site-info {
+			float: left;
+			width: 39%;
+			padding-top: 12px;
+			padding-left: 2%;
+		}
+
 	}
 }
+
+
+
+/************************************
+	Homepage
+************************************/
+
+div.hp-intro {
+	width: 53%;
+	margin: 10px auto 30px;
+}
+
+div.hp-linkblocks {
+	height: auto;
+	overflow: auto;
+	margin: 50px 0;
+	padding-left: 5%;
+	padding-right: 2%;
+
+	.imagelink-row {
+		height: auto;
+		overflow: auto;
+		margin: 20px 0;
+
+		.hp-imagelink img{
+			float: left;
+			width: 30%;
+			max-width: 260px;
+			height: 160px;
+
+			margin-right: 3%;
+			margin-bottom: 25px;
+
+			border: 1px solid #003F87;
+		}
+	}
+
+	.imagelink-row a:nth-child(3n) {
+		img {
+			margin-right: 0;
+		}
+	}
+}
+
+
+/************************************
+	Training Page
+************************************/
+
+div.dropdown-filters {
+	margin-left: 16%;
+	margin-bottom: 20px;
+}
+
+div.video-slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	margin-left: 1%;
+	padding: 2%;
+
+	img {
+		float: left;
+		width: 25%;
+		height: 150px;
+		margin-right: 1%;
+	}
+
+	img:nth-of-type(2) {
+		margin-left: 1.5%;
+	}
+
+	img.featured-video {
+		width: 43%;
+		height: 260px;
+	}
+
+	img:nth-of-type(4) {
+		margin-right: 0;
+	}
+
+	img.slidericon {
+		position: absolute;
+		width: 3%;
+		height: 30px;
+		top: 140px;
+		cursor: pointer;
+	}
+
+	img.slidericon:first-of-type {
+		left: 0;
+	}
+
+	img.slidericon:last-of-type {
+		right: 7px;
+	}
+}
+
+div.video-slider img:nth-child(even) {
+	margin-top: 65px;
+}
+
+div.article-list {
+	float: left;
+	width: 49%;
+	margin-left: 10%;
+	margin-right: 3%;
+
+	.articlesummary {
+		margin-top: 20px;
+
+		h3 {
+			margin: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		span.learn-more {
+			float: right;
+			margin-top: -15px;
+			padding-right: 45px;
+		}
+	}
+
+	h5:hover {
+		cursor: pointer;
+	}
+}
+
+div.askquestion {
+	float: left;
+	width: 28%;
+	margin: 20px 10% 30px 0;
+	padding: 10px 20px;
+	height: 275px;
+	border: 1px solid #003F87;
+
+	p {
+		height: 160px;
+		color: gray;
+	}
+
+	button {
+		margin-left: 35%;
+	}
+}
+
+
+
+//}
+
