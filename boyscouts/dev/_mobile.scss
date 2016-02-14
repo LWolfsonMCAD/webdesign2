@@ -54,6 +54,11 @@ div#wrapper {
 
 	div#content {
 		padding-bottom: 2em;
+
+		div.sidebar {
+			float: none;
+			width: 100%;
+		}
 	}
 
 	div#footer {
@@ -158,52 +163,75 @@ div.video-slider {
 div.article-list {
 	float: none;
 	width: 100%;
-	margin: 40px 0;
+	margin-left: 0;
+	margin-right: 0;
 
-	.articlesummary {
-		float: left;
-		width: 49%;
-		margin: 20px 0;
+	div.featured-articles {
+		height:100%;
+		overflow: auto;
 
-		h3 {
-			margin: 0;
+		div.articlesummary {
+			float: left;
+			width: 49%;
+			margin: 20px 0;
+
+			span.learn-more {
+				margin-top: 5px;
+				padding-right: 25px;
+			}
 		}
 
-		p {
-			margin: 0;
+		div.articlesummary:nth-of-type(odd) {
+			margin-right: 2%;
 		}
 
-		span.learn-more {
-			margin-top: 5px;
-			padding-right: 25px;
+		div.article3,
+		div.article4 {
+			display:inline;
 		}
-	}
+	}	
 
-	.articlesummary:nth-of-type(odd) {
-		margin-right: 2%;
-	}
-
-	h5:hover {
-		cursor: pointer;
+	h5 {
+		margin-left:25%;	
 	}
 }
 
 div.askquestion {
-	float: left;
-	width: 28%;
-	margin: 20px 10% 30px 0;
-	padding: 10px 20px;
-	height: 275px;
-	border: 1px solid #003F87;
+	float: none;
+	width: 100%;
+	margin-top: 50px;
+}
 
-	p {
-		height: 160px;
-		color: gray;
+
+/************************************
+	Article With Sidebar
+************************************/
+span.articlecategory {
+	margin-bottom: 5px;
+	border-bottom: 2px dotted #CE1126;
+}
+
+div.trainingarticle {
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	margin-bottom: 40px;
+	padding-right: 0;
+
+	h5.byline {
+		margin-top: 10px;
 	}
 
-	button {
-		margin-left: 35%;
+	blockquote {
+		float: none;
+		width: 90%;
+		margin: 0;
+		padding: 15px 10px;
+
+		border-top: 2px solid #003F87;
+		border-bottom: 1px solid #003F87;
 	}
+
 }
 
 }

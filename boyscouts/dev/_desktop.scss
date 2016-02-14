@@ -30,11 +30,16 @@ h1 {
 }
 
 h2 {
+	margin-left: -16px;
 	margin-bottom: 5px;
+	padding-left: 15px;
+	
+	font-family: 'Arial Narrow', Arial, sans-serif;
 	font-weight: 400;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: #CE1126;
+	color: #fff;
+	background-color: #003F87;
 }
 
 h3 {
@@ -190,6 +195,18 @@ div#wrapper {
 			font-style: italic;
 			color: #CE1126;
 			cursor: pointer;
+		}
+
+		div.sidebar {
+			float: left;
+			width: 30%;
+			margin-top: 18px;
+			padding: 10px 15px;
+			border: 1px solid #003F87;
+
+			span.sidebartitle {
+				border-bottom: 2px dotted #003F87;
+			}
 		}
 	}
 
@@ -348,22 +365,32 @@ div.article-list {
 	margin-left: 10%;
 	margin-right: 3%;
 
-	.articlesummary {
-		margin-top: 20px;
+	div.featured-articles {
+	height:100%;
+	overflow: auto;
+	
+		div.articlesummary {
+			margin-top: 20px;
 
-		h3 {
-			margin: 0;
-		}
+			h3 {
+				margin: 0;
+			}
 
-		p {
-			margin: 0;
-		}
+			p {
+				margin: 0;
+			}
 
-		span.learn-more {
-			float: right;
-			margin-top: -15px;
-			padding-right: 45px;
+			span.learn-more {
+				float: right;
+				margin-top: -15px;
+				padding-right: 45px;
+			}
 		}
+	}
+
+	div.article3,
+	div.article4 {
+		display: none;
 	}
 
 	h5:hover {
@@ -390,6 +417,67 @@ div.askquestion {
 }
 
 
+/************************************
+	Article With Sidebar
+************************************/
+span.articlecategory {
+	margin-bottom: 5px;
+	border-bottom: 2px dotted #CE1126;
+}
+
+div.trainingarticle {
+	float: left;
+	position: relative;
+	width: 55%;
+	margin-left: 12%;
+	margin-bottom: 40px;
+	padding-right: 5%;
+
+	h3.articlecatchphrase {
+		font-style: italic;
+		line-height: 1em;
+	}
+
+	h5.byline {
+		margin-top: 10px;
+	}
+
+	img.headlinephoto {
+		width: 100%;
+		max-width: 400px;
+		margin: 10px 0;
+	}
+
+	blockquote {
+		float: right;
+		width: 53%;
+		margin-right: -20%;
+
+		font-size: 1.1em;
+		font-weight: 700;
+		font-style: italic;
+		line-height:1.2em;
+		letter-spacing:0.03em;
+		color: #003F87;
+	}
+
+}
+
+div.sidebar {
+	p {
+		margin: 20px 0 4px;
+	}
+
+	p.sidebarlink {
+		margin-top:-7px;
+		text-align: right;
+	}
+
+	hr {
+		width: 40%;
+		margin: 18px auto;
+	}
+}
 
 //}
 
