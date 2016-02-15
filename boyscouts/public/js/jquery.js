@@ -1,15 +1,15 @@
 $( document ).ready(function() {
-	//var ;
 
 
-//Override default styles
+//Homepage hover functions.
+$('div#main-nav li').hover(function() {
+	$(this).toggleClass('jQueryHover');
 
+});
 
-
-
-
-//Main navigation actions.
-
+$('div.imagelink-row div.linkblock').hover(function() {
+	$(this).find('div.overlay').toggleClass('jQImageHover');
+});
 
 
 

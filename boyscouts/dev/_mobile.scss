@@ -17,7 +17,7 @@ div#wrapper {
 		div#main-nav {
 			width: 100%;
 			margin: -15px 0 0;
-			padding-top: 0;
+			padding: 0;
 
 			ul {
 				padding-left: 0;
@@ -34,6 +34,7 @@ div#wrapper {
 							padding: 10px;
 							color: #003F87;
 						}
+
 				}
 
 				li:first-of-type,
@@ -111,10 +112,13 @@ div.hp-linkblocks {
 	.imagelink-row {
 		margin: 0;
 
-		.hp-imagelink img{
-			width: 47%;
-			height: 115px;
-			margin-right: 3%;
+		div.linkblock {
+			
+			img{
+				width: 47%;
+				height: 115px;
+				margin-right: 3%;
+			}
 		}
 	}
 
