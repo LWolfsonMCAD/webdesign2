@@ -510,30 +510,47 @@ div.sidebar {
 }
 
 
-div#wrapper {
-	div#header {
-		h1.logoalternative {
-			margin-top: 20px;
-		}
-
-		h1.styletitle {
-			width: 79%;
-			margin: 70px 0 0 3%;
-			font-weight: 400;
-			color: #003f87;
-		}
-
-		div#main-nav {
-			padding-top: 20px;
-		}
-
-	}
-}
-
-
 /************************************
 	Styleguide
 ************************************/
+div#wrapper {
+div#header {
+	h1.logoalternative {
+		margin-top: 20px;
+	}
+
+	h1.styletitle {
+		width: 79%;
+		margin: 70px 0 0 3%;
+		font-weight: 400;
+		color: #003f87;
+	}
+
+	div#main-nav {
+		padding-top: 20px;
+	}
+
+}
+
+div#content {
+	width: 90%;
+	margin: 0 auto;
+
+	div.style-section {
+		p.firstparagraph {
+			width: 75%;
+		}
+
+		div.headings {
+			div.heading-example {
+
+			}
+		}
+	}
+}
+
+}
+
 
 //}
 
