@@ -1,0 +1,241 @@
+/************************************
+Mobile/Tablet Friendly
+************************************/
+@media screen and (max-width: 959px) {
+	div#wrapper div#header hr {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+div#wrapper {
+	div#header {
+		height: auto;
+		overflow: auto;
+		padding-top: 1em;
+
+		div#main-nav {
+			width: 100%;
+			margin: -15px 0 0;
+			padding: 0;
+
+			ul {
+				padding-left: 0;
+
+				li{
+					float: none;
+					display: block;
+					width: 100%;
+					margin-bottom: 15px;
+					text-align: center;
+
+						a {
+							display: block;
+							padding: 10px;
+							color: #003F87;
+						}
+
+				}
+
+				li:first-of-type,
+				li:nth-of-type(2) {
+						width: 100%;
+					}
+
+				li#mobilelogin {
+					display: block;
+				}
+			}
+		}
+
+		div#desktoplogin {
+			display: none;
+		}
+	}
+
+	div#content {
+		padding-bottom: 2em;
+
+		div.sidebar {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	div#footer {
+		padding-top: 1em;
+		padding-left: 2%;
+		bottom: auto;
+
+		div#footer-nav {
+			width: 100%;
+			padding-right: 0;
+				
+			ul {
+				margin-left: 0;
+				padding-left: 0;
+
+				li {
+					display: block;
+					float: none;
+					width: 100%;
+				}
+
+				li.licensing-link {
+					width: 100%;
+				}
+			}
+		}
+
+		div#site-info {
+			float: none;
+			width: 100%;
+			padding-left: 0;
+			text-align: center;
+		}
+
+	}
+}
+
+
+/************************************
+	Homepage
+************************************/
+div.hp-intro {
+	width: 90%;
+}
+
+div.hp-linkblocks {
+	margin: 0;
+	padding: 0;
+
+	.imagelink-row {
+		margin: 0;
+
+		div.linkblock {
+			
+			img{
+				width: 47%;
+				height: 115px;
+				margin-right: 3%;
+			}
+		}
+	}
+
+	.imagelink-row a:nth-child(3n) {
+		img {
+			margin-right: 3%;
+		}
+	}
+
+	.imagelink-row a:nth-child(2n) {
+		img {
+			margin-right: 0;
+		}
+	}
+}
+
+
+/************************************
+	Training Page
+************************************/
+
+div.dropdown-filters {
+	img {
+		margin-bottom: 15px;
+	}
+}
+
+div.video-slider {
+	img.previous-video,
+	img.next-video {
+		display: none;
+	}
+
+	img.featured-video {
+		float: none;
+		width: 90%;
+		height: 210px;
+		margin-left: 3.5%;
+	}
+
+	img.slidericon {
+		top: 100px;
+	}
+}
+
+div.article-list {
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+
+	div.featured-articles {
+		height:100%;
+		overflow: auto;
+
+		div.articlesummary {
+			float: left;
+			width: 49%;
+			margin: 20px 0;
+
+			span.learn-more {
+				margin-top: 5px;
+				padding-right: 25px;
+			}
+		}
+
+		div.articlesummary:nth-of-type(odd) {
+			margin-right: 2%;
+		}
+
+		div.article3,
+		div.article4 {
+			display:inline;
+		}
+	}	
+
+	h5 {
+		margin-left:25%;	
+	}
+}
+
+div.askquestion {
+	float: none;
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+/************************************
+	Article With Sidebar
+************************************/
+span.articlecategory {
+	margin-bottom: 5px;
+	border-bottom: 2px dotted #CE1126;
+}
+
+div.trainingarticle {
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	margin-bottom: 40px;
+	padding-right: 0;
+
+	h5.byline {
+		margin-top: 10px;
+	}
+
+	blockquote {
+		float: none;
+		width: 90%;
+		margin: 0;
+		padding: 15px 10px;
+
+		border-top: 2px solid #003F87;
+		border-bottom: 1px solid #003F87;
+	}
+
+}
+
+}
