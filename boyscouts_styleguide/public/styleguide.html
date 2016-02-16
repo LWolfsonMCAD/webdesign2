@@ -26,93 +26,217 @@
 
     <!-- HEADER -->
         <div id="header">
-            <h1 class="logoalternative">
+            <h1 id="logoalternative">
                 <a href="#">
                     <img src="img/bsalogo.png" alt="Boy Scouts of America">
                 </a>
             </h1>
 
-            <h1 class="styletitle">BSA Website Styleguide</h1>
+            <h1 id="styletitle">BSA Website Styleguide</h1>
 
             <div id="main-nav">
-                <ul>
-                    <li><a href="#">Typography</a><img src="img/hovershape.png" alt="hover shape"></li>
-                    <li><a href="#">Modules&#47;Components</a><img src="img/hovershape.png" alt="hover shape"></li>
-                    <li><a href="#">Colors</a><img src="img/hovershape.png" alt="hover shape"></li>
-                    <li><a href="#">Buttons&#47;Forms</a><img src="img/hovershape.png" alt="hover shape"></li>
-                    <li><a href="#">Grids&#47;Layouts</a><img src="img/hovershape.png" alt="hover shape"></li>
+                <ul id="styleguide-nav">
+                    <li><a href="#typography">Typography</a><img src="img/hovershape.png" alt="hover shape"></li>
+                    <li><a href="#modules-components">Modules&#47;Components</a><img src="img/hovershape.png" alt="hover shape"></li>
+                    <li><a href="#colors">Colors</a><img src="img/hovershape.png" alt="hover shape"></li>
+                    <li><a href="#buttons-forms">Buttons&#47;Forms</a><img src="img/hovershape.png" alt="hover shape"></li>
+                    <li><a href="#grids-layouts">Grids&#47;Layouts</a><img src="img/hovershape.png" alt="hover shape"></li>
                 </ul>
             </div>
         </div><!-- END HEADER -->
 
     <!-- PAGE CONTENT -->
         <div id="content" class="clearfix">
+        <div id="styleguide">
             <h1>Styleguide Purpose</h1>
             <div class="hp-intro">
-                <p class="firstparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra eros a sodales venenatis. In laoreet magna sed dolor ultrices, et sagittis mauris vestibulum. Cras ultrices facilisis magna, in porta augue. In suscipit mi massa, eu aliquet nisi sodales sed. Here’s an intext link volutpat. Aenean tempor nisi a pretium molestie. Morbi pellentesque tempor quam.</p>
+                <p class="firstparagraph">This guide is to be used as a starting point for implementing changes to the existing Boy Scouts of America website. In the redesign, a premium has been put on a clean, minimal look that helps the user be able to find the information they want more quickly. While there are still design elements to be worked out, you should be able to get an overall sense of what the site design entails and the direction that new elements should be created in.</p>
             </div>
 
-            <div class="style-section">
+            <div id="typography" class="style-section">
                 <h2>Typography</h2>
 
-                <p class="firstparagraph">According to the Boy Scouts of America Brand Guidelines, Arial should be used for all website materials. It is a clean, easy-to-read web font, that is also extremely ubiquitous, making it much more likely that the majority of users will be able to see the site as intended, and get the same experience regardless of device. In order to add some variety throughout the page, Arial and Arial Narrow were used, along with three different colors, capitilzation, italics, block background colors, and various weights.</p>
+                <p>According to the Boy Scouts of America Brand Guidelines, Arial should be used for all website materials. It is a clean, easy-to-read web font, that is also extremely ubiquitous, making it much more likely that the majority of users will be able to see the site as intended, and get the same experience regardless of device. In order to add some variety throughout the page, Arial and Arial Narrow were used, along with three different colors, capitilzation, italics, block background colors, and various weights.</p>
 
                 <div class="headings">
                     <div class="heading-example">
-                    <h1>Heading 1, Page Title</h1>
-                    <p class="heading-description">
-                       font-family: Arial, sans-serif<br>
-                       font-size: 2.5em<br>
-                       font-weight: 700<br>
-                       letter-spacing: 0.01em<br>
-                       color: &#35;003F87
-                    </p>
+                        <h1>Heading 1, Page Title</h1>
+                        <p class="heading-description">
+                           font-family: Arial, sans-serif<br>
+                           font-size: 2.5em<br>
+                           font-weight: 700<br>
+                           letter-spacing: 0.01em<br>
+                           color: &#35;003F87
+                        </p>
                     </div>
 
-                    <h2 class="heading-example">Heading 2, Section or Article Title</h2>
-                    <p class="heading-description">
-                       font-family: 'Arial Narrow', Arial, sans-serif<br>
-                       font-weight: 400<br>
-                       letter-spacing: 0.05em<br>
-                       color: &#35;fff<br>
-                       background-color: &#35;003F87
-                    </p>
+                    <div class="heading-example">
+                        <h2>Heading 2, Section or Article Title</h2>
+                        <p class="heading-description">
+                           font-family: 'Arial Narrow', Arial, sans-serif<br>
+                           font-weight: 400<br>
+                           letter-spacing: 0.05em<br>
+                           color: &#35;fff<br>
+                           background-color: &#35;003F87
+                        </p>
+                    </div>
 
-                    <h3 class="heading-example">Heading 3, sub-heading</h3>
-                    <p class="heading-description">
-                       font-family: Arial, sans-serif<br>
-                       font-weight: 400<br>
-                       letter-spacing: 0.01em<br>
-                       color: &#35;003F87
-                    </p> 
+                    <div class="heading-example">
+                        <h3>Heading 3, sub-heading</h3>
+                        <p class="heading-description">
+                           font-family: Arial, sans-serif<br>
+                           font-weight: 400<br>
+                           letter-spacing: 0.01em<br>
+                           color: &#35;003F87
+                        </p> 
+                    </div>
 
-                    <h4 class="heading-example">Heading 4, sub-heading</h4>
-                    <p class="heading-description">
-                       font-family: Arial, sans-serif<br>
-                       font-weight: 700<br>
-                       letter-spacing: 0.01em<br>
-                       text-transform: uppercase<br>
-                       color: &#35;CE1126
-                    </p>            
+                    <div class="heading-example">
+                        <h4>Heading 4, sub-heading</h4>
+                        <p class="heading-description">
+                           font-family: Arial, sans-serif<br>
+                           font-weight: 700<br>
+                           letter-spacing: 0.01em<br>
+                           text-transform: uppercase<br>
+                           color: &#35;CE1126
+                        </p> 
+                    </div>           
 
-                    <h5 class="heading-example">Heading 5, sub-heading or Author Byline</h5>
-                    <p class="heading-description">
-                       font-family: 'Arial Narrow', Arial, sans-serif<br>
-                       letter-spacing: 0.03em<br>
-                       text-transform: uppercase<br>
-                       color: &#35;000
-                    </p> 
+                    <div class="heading-example">
+                        <h5>Heading 5, sub-heading or Author Byline</h5>
+                        <p class="heading-description">
+                           font-family: 'Arial Narrow', Arial, sans-serif<br>
+                           letter-spacing: 0.03em<br>
+                           text-transform: uppercase<br>
+                           color: &#35;444
+                        </p> 
+                    </div>
 
-                    <h6 class="heading-example">Heading 5, sub-heading or Author Byline</h6>
-                    <p class="heading-description">
-                       font-family: Arial, sans-serif<br>
-                       font-size: 0.75em<br>
-                       font-weight: 400<br>
-                       letter-spacing: 0.01em<br>
-                       color: &#35;003F87
-                    </p>    
+                    <div class="heading-example">
+                        <h6>Heading 6, sub-heading or Author Byline</h6>
+                        <p class="heading-description">
+                           font-family: Arial, sans-serif<br>
+                           font-size: 0.75em<br>
+                           font-weight: 400<br>
+                           letter-spacing: 0.01em<br>
+                           color: &#35;003F87
+                        </p> 
+                    </div>   
+                </div>
+
+                <div class="paragraph">
+                    <h3>Paragraph Treatment</h3>
+                    <p>For paragraphs, the first letter of the first paragraph on a page is larger (as seen above), signaling where to start, and also giving the writing a little more visual appeal. For the rest of the paragraphs, the Arial font is used, with a slightly smaller font-size (0.9em), a line-height of 1.4 and a letter spacing of 0.02em, which all helps to make everything more readable.</p>
+                </div>
+
+                <div class="blockquotes">
+                    <h3>Blockquotes</h3>
+                    <p>(This relates to the blockquote styles found on article pages). Blockquotes should make it easy to scan an article or page, and get a fact or piece of information that's related in the rest of the content without completely taking over the page. To achieve this, the Arial font is used, but emphasized. The font-size is 1.1em, making it larger than a standard paragraph, with a weight of 700 and italics. To accomodate the larger size, the line-height and letter spacing have been increased (to 1.2em and 0.03em respectively) and the text should all be Boy Scout Blue. </p>
+
+                    <p>Desktop and mobile versions vary slightly due to space considerations. In the desktop implementation, the blockquote is floated to the right, moved outside of the div with a negative margin, and takes up a little over half of its original width, with the text going around it. For the mobile version, the blockquote styling itself remains the same, however the placement changes. The quote slides into the flow of the rest of the article, has more padding on the left and right, and is separated from the surrounding paragraphs by a thick blue line above it and a thinner blue line below it.</p>
+
+                    <div class="example-image desktop">
+                        <img src="img/desktopblockquote.png" alt="Example of desktop blockquote">
+                        <p class="caption">&mdash; Desktop blockquote</p>
+                    </div>
+
+                    <div class="example-image mobile">
+                        <img src="img/mobileblockquote.png" alt="Example of mobile blockquote">
+                        <p class="caption">&mdash; Mobile blockquote</p>
+                    </div>
                 </div>
             </div>
+
+            <div id="modules-components" class="style-section clearfix">
+                <h2>Modules &#47; Components</h2>
+
+                <p>In order to give a cohesive feel to the site, many of the modules and components that make up this design will be consistently used throughout the site. The parts on each page that will change the most will be content and images.</p>
+
+                <div class="headerstyles">
+                    <h3>Header</h3>
+                    <p>There is currently one header at the top of the page, where the main navigation is located. It is minimal. The logo features prominently in the upper left-hand corner, with the menu going out horizontally to the right. In the desktop configuration, the login for a user in the upper right corner of the page (in the mobile version the login is instead included as part of the main navigation dropdown menu). The header appears the same on all pages through the site. Within a page, various sections can be broken up by using the H2 Heading, with their blue background, which can help denote different sections on a single page. The same is true for the mobile version.</p>
+
+                    <div class="example-image desktop">
+                        <img src="img/desktopheader.png" alt="Desktop header">
+                        <p class="caption">&mdash; Desktop header</p>
+                    </div>
+                </div>
+
+                <div class="navstyles">
+                    <h3>Navigation</h3>
+                    <p>For the desktop version of the site (or a tablet in landscape mode), there is a top-level main navigation menu, that goes horizontally across the page (taking up more of the right side of the header, with the logo at its left). When a user hovers over one of the menu items, a red shape is shown, the text turns to white, and the subnavigation menu drops down. </p>
+
+                    <p>For the mobile version, the logo is smaller, but still featured in the upper left corner. The main navigation menu collapses into a dropdown menu and there isn't a hover shape, but the chosen menu item is marked with a red background and the subnavigation dropdown menu is seen.</p>
+
+                    <div class="example-image desktop">
+                        <img src="img/desktopnavigation.png" alt="Example of desktop navigation">
+                        <p class="caption">&mdash; Desktop navigation</p>
+                    </div>
+
+                    <div class="example-image mobile">
+                        <img src="img/mobilenavigation.png" alt="Example of mobile navigation">
+                        <p class="caption">&mdash; Mobile navigation</p>
+                    </div>
+                </div>
+
+                <div class="footerstyles">
+                    <h3>Footer</h3>
+                    <p>The footer styling reflects the header, with a white background and thin blue line marking its borders. It features the copyright for the site, as well as a secondary navigation list (seen horizontally on the right side of the page in the desktop version, and as a vertical list in the mobile instance).</p>
+
+                    <div class="example-image desktop">
+                        <img src="img/desktopfooter.png" alt="Desktop footer">
+                        <p class="caption">&mdash; Desktop footer</p>
+                    </div>
+
+                    <div class="example-image mobile">
+                        <img src="img/mobilefooter.png" alt="Example of mobile footer">
+                        <p class="caption">&mdash; Mobile footer</p>
+                    </div>
+                </div>
+
+                <div class="sidebarstyles">
+                    <h3>Sidebars</h3>
+                    <p>Sidebars can be used in a variety of ways throughout the site, depending on how the content should be broken up or supported. The sidebar can be a place to show a list of related material found elsewhere on the site, or to draw attention to facts at a glance. The sidebar can appear on either the right or left side of a page in the desktop version, and will slide below the main content when viewed on a mobile device. The sidebar has it's own H3 Heading used for a title (though you can forgo it depending on the situation), and is highlighted by a blue border around the edges. Content should be well padded, so as not to get to close to the edges. And links can be either images, or "Learn More" links as seen below.</p>
+
+                    <div class="example-image desktop">
+                        <img src="img/desktopsidebar.png" alt="Desktop sidebar">
+                        <p class="caption">&mdash; Desktop sidebar</p>
+                    </div>
+
+                    <div class="example-image mobile">
+                        <img src="img/mobilesidebar.png" alt="Example of mobile sidebar">
+                        <p class="caption">&mdash; Mobile sidebar</p>
+                    </div>
+                </div>
+
+                <h3>Images</h3>
+                <p>For image subject guidelines, please refer to the Brand Identity Guide. As for styling, images should be used to add color and break up long articles. They shouldn't take up the entire width of the site in any given area (ideally no more than a max width of 650px, which would be a little over 2/3 of the max-width of the body). Images can be used as links, and will need to have a hover-state that explains where the link is going if it isn't obvious by accompanying information. Credit for images should be relayed in captions (if the image was provided by anyone not directly associated with the BSA Marketing Team), in the lower left under the image itself.</p>
+            </div>
+
+            <div id="colors" class="style-section">
+                <h2>Colors</h2>
+
+                <p>The main colors for the site were derived from the Brand Identity Guidelines, which give 2 primary colors, along with two more colors that can be used. In order to give color variety, try and find a wide range of images with different subjects and settings.</p>
+            </div>
+
+            <div id="buttons-forms" class="style-section">
+                <h2>Buttons &#47; Forms</h2>
+
+                <p>Buttons and forms are still currently being developed as needed. Forms echo the sidebar design, keeping with the minimalism of the site, outlined in Boy Scout Blue. Buttons use the same right angle edges, and have two states (active and hover), that also complement the rest of the layout. Aside from the main navigation submenu, dropdown menus will have placeholder text, and a plus sign to the right that the user clicks to see the options.</p>
+            </div>
+
+            <div id="grids-layouts" class="style-section">
+                <h2>Grids &#47; Layouts</h2>
+
+                <p>The main goal of the site is to make sure that users can easily find the information they're looking for. It should be clean, inviting, and give a sense of the broader scouting culture fulfilling the motto to "be prepared." Throughout the pages, the only content that should reach edge to edge is contained in the main header and footer. Everything else should have plenty of breathing room from the sides and each other.</p>
+
+                <p>Content doesn't have to be symmetrical on the page, but should still feel balanced nonetheless. You can mix it up by varying the sizes of like elements, or having several elements in rows.</p>
+
+                <p>In order for people to be able to find what they're looking for, landing pages will contain several different sections, which invite the user to explore further in the area they wish, until they get to a section/page with a single idea (see the article page). Even though one main idea might be presented, there should always be the opportunity to learn more, either about related content, or to reach out and interact with an active scouting community. This can be done by utilizing the sidebar, Q&amp;A sections, as well as social media (which still needs to be flushed out in this design).</p>
+
+                <p>The look of the site between desktop and mobile should be easy to understand, and clearly linked. No information should be lost when viewing the site through a mobile device (although some of the content can be truncated earlier, allowing the user to see as much overall information as they would on a computer, without having to scroll forever.</p>
+            </div>
+        </div>
         </div><!-- END PAGE CONTENT -->
 
     <!-- FOOTER -->

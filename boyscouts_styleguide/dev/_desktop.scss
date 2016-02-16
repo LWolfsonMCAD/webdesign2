@@ -515,11 +515,11 @@ div.sidebar {
 ************************************/
 div#wrapper {
 div#header {
-	h1.logoalternative {
+	h1#logoalternative {
 		margin-top: 20px;
 	}
 
-	h1.styletitle {
+	h1#styletitle {
 		width: 79%;
 		margin: 70px 0 0 3%;
 		font-weight: 400;
@@ -527,26 +527,62 @@ div#header {
 	}
 
 	div#main-nav {
-		padding-top: 20px;
+		ul#styleguide-nav {
+			margin-top: -57px;
+			padding-top: 0px;
+
+			li:nth-of-type(2) {
+				width: 25%;
+			}
+		}
 	}
 
 }
 
-div#content {
+div#content div#styleguide {
 	width: 90%;
 	margin: 0 auto;
 
-	div.style-section {
+	p.caption {
+		font-size: 0.7em;
+		font-weight: 700;
+		font-style: italic;
+	}
+
+	div.hp-intro {
 		p.firstparagraph {
 			width: 75%;
-		}
+		}	
+	}
 
-		div.headings {
-			div.heading-example {
+	div.style-section {
+		height: 100%;
+	}
 
+	div#typography {
+		div.blockquotes {
+			overflow: auto;
+
+			p:nth-of-type(2) {
+				margin-bottom: 2em;
+			}
+
+			div.example-image.desktop {
+				float:left;
+				width:58%;
+			}
+
+			div.example-image.mobile {
+				float:left;
+				width:20%;
+
+				p.caption {
+					margin-top: 39px;
+				}
 			}
 		}
 	}
+	
 }
 
 }
