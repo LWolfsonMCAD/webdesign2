@@ -53,7 +53,7 @@
                 <p class="firstparagraph">This guide is to be used as a starting point for implementing changes to the existing Boy Scouts of America website. In the redesign, a premium has been put on a clean, minimal look that helps the user be able to find the information they want more quickly. While there are still design elements to be worked out, you should be able to get an overall sense of what the site design entails and the direction that new elements should be created in.</p>
             </div>
 
-            <div id="typography" class="style-section">
+            <div id="typography" class="style-section clearfix">
                 <h2>Typography</h2>
 
                 <p>According to the Boy Scouts of America Brand Guidelines, Arial should be used for all website materials. It is a clean, easy-to-read web font, that is also extremely ubiquitous, making it much more likely that the majority of users will be able to see the site as intended, and get the same experience regardless of device. In order to add some variety throughout the page, Arial and Arial Narrow were used, along with three different colors, capitilzation, italics, block background colors, and various weights.</p>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
 
-                <div class="footerstyles">
+                <div class="footerstyles clearfix">
                     <h3>Footer</h3>
                     <p>The footer styling reflects the header, with a white background and thin blue line marking its borders. It features the copyright for the site, as well as a secondary navigation list (seen horizontally on the right side of the page in the desktop version, and as a vertical list in the mobile instance).</p>
 
@@ -194,7 +194,7 @@
                     </div>
                 </div>
 
-                <div class="sidebarstyles">
+                <div class="sidebarstyles clearfix">
                     <h3>Sidebars</h3>
                     <p>Sidebars can be used in a variety of ways throughout the site, depending on how the content should be broken up or supported. The sidebar can be a place to show a list of related material found elsewhere on the site, or to draw attention to facts at a glance. The sidebar can appear on either the right or left side of a page in the desktop version, and will slide below the main content when viewed on a mobile device. The sidebar has it's own H3 Heading used for a title (though you can forgo it depending on the situation), and is highlighted by a blue border around the edges. Content should be well padded, so as not to get to close to the edges. And links can be either images, or "Learn More" links as seen below.</p>
 
@@ -213,19 +213,59 @@
                 <p>For image subject guidelines, please refer to the Brand Identity Guide. As for styling, images should be used to add color and break up long articles. They shouldn't take up the entire width of the site in any given area (ideally no more than a max width of 650px, which would be a little over 2/3 of the max-width of the body). Images can be used as links, and will need to have a hover-state that explains where the link is going if it isn't obvious by accompanying information. Credit for images should be relayed in captions (if the image was provided by anyone not directly associated with the BSA Marketing Team), in the lower left under the image itself.</p>
             </div>
 
-            <div id="colors" class="style-section">
+            <div id="colors" class="style-section clearfix">
                 <h2>Colors</h2>
 
                 <p>The main colors for the site were derived from the Brand Identity Guidelines, which give 2 primary colors, along with two more colors that can be used. In order to give color variety, try and find a wide range of images with different subjects and settings.</p>
+                
+                <div class="main-colors">
+                    <div class="example-image color">
+                        <img src="img/blueswatch.png" alt="Boy Scout Blue">
+                        <p class="caption">&mdash; Boy Scout Blue (#003F87)</p>
+                    </div>
+
+                    <div class="example-image color">
+                        <img src="img/redswatch.png" alt="Boy Scout Red">
+                        <p class="caption">&mdash; Boy Scout Red (#CE1126)</p>
+                    </div>
+                </div>
+
+                <div class="secondary-colors">
+                    <div class="example-image color">
+                        <img src="img/brownswatch.png" alt="Brown">
+                        <p class="caption">&mdash; Brown (#996633)</p>
+                    </div>
+
+                    <div class="example-image color">
+                        <img src="img/yellowswatch.png" alt="Yellow">
+                        <p class="caption">&mdash; Yellow (#FFCC00)</p>
+                    </div>
+
+                    <div class="example-image color">
+                        <img src="img/greenswatch.png" alt="Green">
+                        <p class="caption">&mdash; Green (#006B3F)</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div id="buttons-forms" class="style-section">
+            <div id="buttons-forms" class="style-section clearfix">
                 <h2>Buttons &#47; Forms</h2>
 
                 <p>Buttons and forms are still currently being developed as needed. Forms echo the sidebar design, keeping with the minimalism of the site, outlined in Boy Scout Blue. Buttons use the same right angle edges, and have two states (active and hover), that also complement the rest of the layout. Aside from the main navigation submenu, dropdown menus will have placeholder text, and a plus sign to the right that the user clicks to see the options.</p>
+
+                <div class="example-image button">
+                    <button>Click Here</button>
+                    <p class="caption">&mdash; Button (hover to see "hover state")</p>
+                </div>
+
+                <div class="example-image dropdown">
+                    <img src="img/dropdownmenu.png" alt="Image of dropdown menu">
+                    <p class="caption">&mdash; Dropdown menu example (non-functional)</p>
+                </div>
             </div>
 
-            <div id="grids-layouts" class="style-section">
+            <div id="grids-layouts" class="style-section clearfix">
                 <h2>Grids &#47; Layouts</h2>
 
                 <p>The main goal of the site is to make sure that users can easily find the information they're looking for. It should be clean, inviting, and give a sense of the broader scouting culture fulfilling the motto to "be prepared." Throughout the pages, the only content that should reach edge to edge is contained in the main header and footer. Everything else should have plenty of breathing room from the sides and each other.</p>

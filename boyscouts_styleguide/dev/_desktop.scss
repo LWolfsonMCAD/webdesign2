@@ -1,5 +1,8 @@
 //Blue : #003F87;
 //Red : #CE1126;
+//Brown : #996633;
+//Yellow : #FFCC00;
+//Green : #006B3F;
 
 /************************************
 Desktop version of site
@@ -549,12 +552,6 @@ div#content div#styleguide {
 		font-style: italic;
 	}
 
-	div.hp-intro {
-		p.firstparagraph {
-			width: 75%;
-		}	
-	}
-
 	div.style-section {
 		height: 100%;
 	}
@@ -579,6 +576,68 @@ div#content div#styleguide {
 				p.caption {
 					margin-top: 39px;
 				}
+			}
+		}
+	}
+
+	div#modules-components {
+		div.navstyles,
+		div.footerstyles {
+			width: 100%;
+
+			div.example-image.desktop {
+				height: 100%;
+				margin-bottom: 25px;
+
+				img {
+					max-width: 95%;
+				}
+			}
+
+			div.example-image.mobile {
+				height: 100%;
+
+				img {
+					max-width: 95%;
+					border: 1px solid #003F87;
+				}
+			}
+		}
+
+		div.sidebarstyles {
+			width: 100%;
+
+			div.example-image {
+				float: left;
+				width: 40%;
+			}
+		}
+	}
+
+
+	div#colors {
+		div.main-colors,
+		div.secondary-colors {
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			margin-bottom: 25px;
+
+			div.color {
+				float: left;
+				width: 33%;
+			}
+		}
+	}
+
+	div#buttons-forms {
+		div.example-image {
+			float: left;
+			width: 40%;
+			margin: 25px 0;
+
+			p.caption {
+				margin-top: 15px;
 			}
 		}
 	}
