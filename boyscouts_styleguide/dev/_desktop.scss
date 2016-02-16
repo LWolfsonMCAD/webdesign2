@@ -542,6 +542,16 @@ div#header {
 
 }
 
+div.style-section > div {
+	margin-bottom: 30px;
+}
+
+div h4,
+div h5,
+div h6 {
+	margin-bottom: 5px;
+}
+
 div#content div#styleguide {
 	width: 90%;
 	margin: 0 auto;

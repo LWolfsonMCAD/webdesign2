@@ -238,4 +238,132 @@ div.trainingarticle {
 
 }
 
+
+/************************************
+	Styleguide
+************************************/
+div#wrapper {
+div#header {
+	h1#styletitle {
+		width: 75%;
+		margin-top: 28px;
+		font-size: 1.6em;
+	}
+
+	div#main-nav {
+		ul#styleguide-nav {
+			margin-top: 0;
+
+			li:nth-of-type(2) {
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+div p:first-of-type {
+	margin-top: 5px;
+}
+
+div#content div#styleguide {
+	width: 95%;
+
+	div#typography {
+		div.blockquotes {
+			width: 100%;
+
+			p:nth-of-type(2) {
+				margin-bottom: 2em;
+			}
+
+			div.example-image.desktop {
+				float:none;
+				
+				img {
+					max-width:348px;
+				}
+			}
+
+			div.example-image.mobile {
+				float:none;
+				margin-top: 25px;
+				
+				img {
+					max-width:300px;
+				}
+
+				p.caption {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	div#modules-components {
+		div.navstyles,
+		div.footerstyles {
+			div.example-image.desktop {
+				margin-bottom: 25px;
+
+				img {
+					max-width: 95%;
+				}
+			}
+
+			div.example-image.mobile {
+				img {
+					max-width: 95%;
+				}
+			}
+		}
+
+		div.headerstyles {
+			div.example-image.desktop {
+				img {
+					max-width: 95%;
+				}
+			}
+		}
+
+		div.sidebarstyles {
+			div.example-image {
+				float: none;
+				width: 100%;
+
+				img {
+					max-width: 95%;
+				}
+			}
+		}
+	}
+
+
+	div#colors {
+		div.main-colors,
+		div.secondary-colors {
+			div.color {
+				float: none;
+				width: 55%;
+			}
+		}
+	}
+
+	div#buttons-forms {
+		div.example-image {
+			float: none;
+			width: 100%;
+			margin: 35px 0;
+		}
+	}
+	
+}
+
+}
+
+
+//}
+
+
+
 }
