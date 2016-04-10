@@ -1,0 +1,268 @@
+/* Red: #f16154;
+/* Teal: #4fa396;
+/* Yellow/orange: #eea41d;
+/* Dark Gray: #333;
+
+
+/************************************
+Desktop version of site
+************************************/
+html {
+body { 
+  width: 90%;	
+  max-width: 960px;
+  margin: 0 auto;
+
+  border:1px solid #ccc;
+
+  h1 {
+    font-family:'Fontdiner Swanky',cursive;
+    letter-spacing:1px; 
+    color:#f16154;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+  	font-family:'Oxygen',sans-serif;
+  	letter-spacing:1px;
+  }
+
+  h2 {
+  	color:#4fa396; 
+  }
+
+  p {
+  	color:#333;
+  }
+
+  ul {
+  	list-style:none;
+  }
+
+  a {
+  	text-decoration:none;
+  }
+
+  span.number {
+	font-family:'Fontdiner Swanky',cursive;
+  	font-size:1.7em;
+  	color:#f16154;
+  }
+
+  header {
+  	div.yellow_colorbar {
+      line-height:0;
+  	}
+  	div.searchbar {
+  	  float: right;
+      margin-top: 10px;
+      margin-right: 5px;
+  	}
+  	div#main-navigation {
+	  height: 128px;
+
+	  ul {
+	    height:128px;
+	    margin:0;
+	    padding-left:2.5%;
+
+	    li {
+	  	  float:left;
+	  	  display:inline;
+	  	  width:15%;
+	  	  margin-top:45px;
+	  	  padding:10px;
+
+	  	  a {
+	  	  	padding:6px;
+		    font-family:'Fontdiner Swanky',cursive;
+		    font-size:1.6em; 
+		    letter-spacing:1px;
+		    color:#4FA396;
+		  }
+		}
+
+		li#headerlogo {
+		  width:23%;
+		  margin-top:0;
+		}
+
+		li:nth-of-type(4),
+		li:nth-of-type(5) {
+		  margin-top:7px;
+		}
+
+		li.currentPage a {
+		  color:#fff;
+		  background-color:#4fa396;
+
+		  -webkit-border-image: url(../img/navborder.png) 9% 4 round; /* Safari 3.1-5 */
+    	  -o-border-image: url(../img/navborder.png) 9% 4 round; /* Opera 11-12.1 */
+    	  border-image: url(../img/navborder.png) 9% 4 round;
+    	  border-image-outset:4px;
+		}
+	  }
+  	}
+
+  	hr {
+  	  width:100%;
+  	  height:10px;
+  	  margin-bottom:0;
+  	  background:url('../img/diamondborder.png') repeat-x 0,0;
+  	  border:0;
+  	}
+  }
+
+  div.main {
+  	padding:2%;
+  	background-color:rgba(238,164,29,0.1);
+
+  	div.main-content {
+	  padding:3%;
+	  background-color:#fff;
+	  border:1px solid #4fa396;
+
+  	  h1 {
+	    margin-top:0;
+  	  }
+
+  	  p#hp_introduction {
+	    float:left;
+	    display:inline;
+	    width:45%;
+	    margin-right:5%;
+
+	    font-size:1.5em;
+	    font-style:italic;
+	    color:#4fa396;
+  	  }
+
+  	  div#cookie-options {
+  	  	height:250px;
+  	  	margin-top:50px;
+
+  	  	div.cookie-type {
+  	  	  float:left;
+  	  	  width: 32%;
+  	  	  margin-right:2%;
+  	  	  text-align:center;
+
+  	  	  img {
+  	  	  	width:100%;
+  	  	  	max-width:215px;
+  	  	  	height:170px;
+  	  	  }
+
+  	  	  p {
+  	  	  	width:83%;
+  	  	  	margin:5px auto;
+  	  	  	padding:10px;
+  	  	  	font-family:'Fontdiner Swanky',cursive;
+  	  	  	color:#fff;
+
+  	  	  	background-color:#4fa396;
+  	  	  }
+  	  	}
+
+  	  	div.cookie-type:nth-of-type(3) {
+  	  	  margin-right:0;
+  	  	}
+  	  }
+    }
+  }
+}
+}
+
+
+/************************************
+Recipe Pages
+************************************/
+html body div.main div.main-content {
+	h1 {
+	  margin-bottom:0;
+	}
+	h3 {
+	  margin-top:5px;
+	  font-size:1.1em;
+	  color:#333;
+	}
+
+	img.time_requirements {
+	  float:left;
+	  margin-right:2%;
+	}
+
+	div.ingredientsList {
+	  float:left;
+	  width:42%;
+	  margin-right:5%;
+
+	  h2 {
+	  	display:inline;
+	  }
+
+	  ul {
+	  	padding-left:10px;
+
+	  	span {
+	  	  margin-right:2%;
+	  	}
+
+	  	li {
+	  	  color:#333;
+	  	}
+	  }
+
+	  p.description {
+	  	font-style:italic;
+	  	color:#4fa396;
+	  }
+	}
+
+	figure {
+	  display:inline;
+      margin:0;
+
+      img {
+      	margin-top:-60px;
+      }
+
+      figcaption {
+      	display:inline;
+    	margin-top:5px;  
+
+      	font-size:.7em;
+    	text-transform:uppercase;
+    	color:#4fa396;
+      }
+	}
+
+	div.toggleButtons {
+	  button {
+	  	margin-right:3%;
+	    font-family:'Fontdiner Swanky',cursive;
+	    color:#eea41d;
+	    background-color:#fff;
+	    border:10px solid transparent;
+
+	    -webkit-border-image: url(../img/buttonborder.png) 22% 10 round; /* Safari 3.1-5 */
+    	-o-border-image: url(../img/buttonborder.png) 22% 10 round; /* Opera 11-12.1 */
+    	border-image: url(../img/buttonborder.png) 22% 10 round;
+    	border-image-outset:6px;
+	  }
+
+	  button.currentView{
+	  	color:#fff;
+	  	background-color:#eea41d;
+	  }
+	}
+
+
+	#borderimg { 
+
+}
+}
