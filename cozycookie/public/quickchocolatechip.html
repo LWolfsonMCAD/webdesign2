@@ -24,6 +24,7 @@
         }
         </script>
         <script src="js/jquery.js"></script>
+        <script src="js/jquery.powertip.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -45,7 +46,7 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
-        </div>
+        </div><!-- End main navigation -->
         <hr>
     </header>
 
@@ -64,45 +65,75 @@
                 </ul>
 
                 <p class="description">This recipe works well for when you have a time-crunch problem, but still want to appear as though you put forth some effort in the kitchen.</p>
-            </div>
+            </div><!-- End ingredient list and description -->
 
             <figure>
               <img src="img/watchingoven.png" alt="Watching the oven illustration">
               <figcaption>This could be you...heels optional</figcaption>
             </figure>
 
-            <div class="toggleButtons">
-                <button type="button" value="Read The Recipe" class="currentView">Read The Recipe</button>
-                <button type="button" value="Watch The Video">Watch The Video</button>
+<!-- With JS the buttons determine which version of the recipe is shown, long form or video. Default is long form, but user can toggle -->
+            <div class="toggleButtons noJS">
+                <button type="button" value="Read The Recipe" id="readRecipeBtn">Read The Recipe</button>
+                <button type="button" value="Watch The Video" id="videoRecipeBtn">Watch The Video</button>
             </div>
 
             <div class="recipeInstructions">
-                <span class="number">1</span>
-                <p>Preheat the oven (to whatever temperature the package calls for, probably about 375 degrees). If your oven is anything like mine, it could take up to 15 minutes for it to actually get up to the right temperature. You might want to have an oven thermometer on hand just to double-check it.</p>
+                <div class="readableRecipe recipeSection">
+                    <div class="leftColumn">
+                        <div class="instructionStep">
+                            <span class="number">1</span>
+                            <p>Preheat the oven (to whatever temperature the package calls for, probably about 375 degrees). If your oven is anything like mine, it could take up to 15 minutes for it to actually get up to the right temperature. You might want to have an oven thermometer on hand just to double-check it.</p>
+                        </div>
 
-                <span class="number">2</span>
-                <p>Gather the “ingredients”. You want to make sure that you have the proper package (no one wants to bite into a cookie thinking it’s chocolate chip only to find out it’s oatmeal raisin). While not an ingredient, be sure to have two cookie sheets on hand (along with parchment paper if you don’t really want to have to clean up).</p>
+                        <div class="instructionStep">
+                            <span class="number">2</span>
+                            <p>Gather the “ingredients”. You want to make sure that you have the proper package (no one wants to bite into a cookie thinking it’s chocolate chip only to find out it’s oatmeal raisin). While not an ingredient, be sure to have two cookie sheets on hand (along with parchment paper if you don’t really want to have to clean up).</p>
+                        </div>
 
-                <span class="number">3</span>
-                <p>Open the package.</p>
+                        <div class="instructionStep short">
+                            <span class="number">3</span>
+                            <p>Open the package.</p>
+                        </div>
 
-                <span class="number">4</span>
-                <p>(For tube) Grab a knife and proceed to cut off 1/4” thick slices (or whatever the package says) then put the discs of dough onto the baking sheets, spaced out so they won’t bake together into one giant cookie (unless that’s what you want, in which case, more power to ya).</p>
+                        <div class="instructionStep">
+                            <span class="number">4</span>
+                            <p>(For tube) Grab a knife and proceed to cut off 1/4” thick slices (or whatever the package says) then put the discs of dough onto the baking sheets, spaced out so they won’t bake together into one giant cookie (unless that’s what you want, in which case, more power to ya).</p>
 
-                <p>(For square package) Break off the pre-determined squares of dough and place them onto your baking sheets, evenly spaced so they won’t run together as they bake.</p>
+                            <p>(For square package) Break off the pre-determined squares of dough and place them onto your baking sheets, evenly spaced so they won’t run together as they bake.</p>
+                        </div>
+                    </div>
 
-                <span class="number">5</span>
-                <p>Set the timer for however long the package says (usually 4 minutes then flip the cookies to the other rack, top on bottom and bottom on top).</p>
+                    <div class="rightColumn">
+                        <div class="instructionStep">
+                            <span class="number">5</span>
+                            <p>Set the timer for however long the package says (usually 4 minutes then flip the cookies to the other rack, top on bottom and bottom on top).</p>
+                        </div>
 
-                <span class="number">6</span>
-                <p>Set up your cooling racks. Due to the lack of counter space, you might just have to squeeze all of the cookies onto one rack. Or you can get a handy-dandy rack stand like I did and have multiple racks only take up the space of one.</p>
+                        <div class="instructionStep">
+                            <span class="number">6</span>
+                            <p>Set up your cooling racks. Due to the lack of counter space, you might just have to squeeze all of the cookies onto one rack. Or you can get <span class="info" >a handy-dandy rack stand</span> like I did and have multiple racks only take up the space of one.</p>
+                        </div>
 
-                <span class="number">7</span>
-                <p>Remove cookies from the oven when done. Grab a spatula and move the cookies onto the cooling racks. Turn off your oven, and let the cookies cool. If you time it right, the cookies can be cooling on the rack, wafting that “just baked” smell into the apartment as your friends walk in, amazed you had time and space to bake the cookies yourself.</p>
-            </div>
+                        <div class="instructionStep">
+                            <span class="number">7</span>
+                            <p>Remove cookies from the oven when done. Grab a spatula and move the cookies onto the cooling racks. Turn off your oven, and let the cookies cool. If you time it right, the cookies can be cooling on the rack, wafting that “just baked” smell into the apartment as your friends walk in, amazed you had time and space to bake the cookies yourself.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="recipeVideo">
+                <div class="videoRecipe recipeSection clearfix">
+                    <video preload = "metadata" controls>
+                    <!-- Default video source: -->
+                    <source type="video/mp4" src="video/bakingcookies.mp4"
+                    media="(orientation:landscape)">
+                    <source type="video/webm" src="video/bakingcookies.webm"
+                    media="(orientation:landscape)">
 
+                    <p>Sorry, your browser won't play this video.</p>
+                    </video>
+
+                </div>
             </div>
         </div>
     </div>

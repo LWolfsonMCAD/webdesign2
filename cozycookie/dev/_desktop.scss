@@ -9,6 +9,7 @@ Desktop version of site
 ************************************/
 html {
 body { 
+  position:relative;
   width: 90%;	
   max-width: 960px;
   margin: 0 auto;
@@ -57,13 +58,15 @@ body {
   	div.yellow_colorbar {
       line-height:0;
   	}
+
   	div.searchbar {
   	  float: right;
-      margin-top: 10px;
-      margin-right: 5px;
+      margin: 10px 5px 20px;
   	}
+
   	div#main-navigation {
 	  height: 128px;
+	  padding-top:20px;
 
 	  ul {
 	    height:128px;
@@ -105,6 +108,21 @@ body {
     	  border-image: url(../img/navborder.png) 9% 4 round;
     	  border-image-outset:4px;
 		}
+
+		li a:hover {
+		  color:#fff;
+		  background-color:#4fa396;
+
+		  -webkit-border-image: url(../img/navborder.png) 9% 4 round; /* Safari 3.1-5 */
+    	  -o-border-image: url(../img/navborder.png) 9% 4 round; /* Opera 11-12.1 */
+    	  border-image: url(../img/navborder.png) 9% 4 round;
+    	  border-image-outset:4px;
+		}
+
+		li#headerlogo a:hover {
+			background-color:transparent;
+			border-image:none;
+		}
 	  }
   	}
 
@@ -130,20 +148,33 @@ body {
 	    margin-top:0;
   	  }
 
-  	  p#hp_introduction {
-	    float:left;
-	    display:inline;
-	    width:45%;
-	    margin-right:5%;
+  	  div#hp_featured {
+  	  	height:100%;
+  	  	overflow:auto;
 
-	    font-size:1.5em;
-	    font-style:italic;
-	    color:#4fa396;
+	  	p {
+		  float:left;
+		  display:inline;
+		  width:45%;
+		  margin-right:5%;
+
+		  font-size:1.5em;
+		  font-style:italic;
+		  color:#4fa396;
+	  	}
+
+	  	img#hp-featuredgif {
+	  	  float:left;
+	  	  width:47%;
+	  	  max-width:425px;
+
+	  	  border:4px solid #4fa396;
+	  	}
   	  }
 
   	  div#cookie-options {
   	  	height:250px;
-  	  	margin-top:50px;
+  	  	margin-top:60px;
 
   	  	div.cookie-type {
   	  	  float:left;
@@ -155,6 +186,11 @@ body {
   	  	  	width:100%;
   	  	  	max-width:215px;
   	  	  	height:170px;
+
+  	  	  	-webkit-border-image: url(../img/cookieborder.png) 9% 4 round; /* Safari 3.1-5 */
+    	  	-o-border-image: url(../img/cookieborder.png) 9% 4 round; /* Opera 11-12.1 */
+    	  	border-image: url(../img/cookieborder.png) 9% 4 round;
+    	  	border-image-outset:4px;
   	  	  }
 
   	  	  p {
@@ -242,6 +278,8 @@ html body div.main div.main-content {
 	}
 
 	div.toggleButtons {
+	  margin:45px 0;
+
 	  button {
 	  	margin-right:3%;
 	    font-family:'Fontdiner Swanky',cursive;
@@ -259,10 +297,111 @@ html body div.main div.main-content {
 	  	color:#fff;
 	  	background-color:#eea41d;
 	  }
+
+	  button:hover {
+	    color:#fff;
+	  	background-color:#eea41d;
+	  }
 	}
 
+	div.recipeInstructions {
+	  div.readableRecipe {
+		position:relative;
+		height:100%;
+		overflow:auto;
+		margin-bottom:45px;
 
-	#borderimg { 
+		div.leftColumn {
+		  float:left;
+		  width:50%;
+		  margin-right:5%;
+		}
+
+		div.rightColumn {
+		  float:right;
+		  width:45%;
+		}
+
+		div.instructionStep {
+		  position:relative;
+
+		  span.number {
+		    position:absolute;
+			top:30%;
+		  }
+
+		  p {
+		  	padding-left:10%;
+		  }
+
+		  span.info {
+		  	font-weight:700;
+		  	color:#4fa396;
+		  }
+
+		  img.hover-image {
+		  	position:absolute;
+		  	top:400;
+		  	right:0;
+		  	z-index:1000;
+		  }
+		}
+
+		div.instructionStep.short {
+		  span.number {
+			top:-5px;
+		  }
+		}
+			
+		}
+
+		div.videoRecipe {
+		  display:block;
+		  margin-left:15%;
+		  padding-top:20px;
+
+		  video {
+		  	width:90%;
+		  	max-width:600px;
+		  }
+		}
+
+	}
 
 }
+
+/************************************
+About Page
+************************************/
+html body div.main div.main-content {
+	h1 {
+	  margin-bottom:25px;
+	}
+
+	div.aboutImages {
+	  float:left;
+	  width:32%;
+	  margin-top:0.5em;
+	  margin-right:5%;
+
+	  figcaption {
+	    display:block;
+	    margin-bottom:1.5em;
+	    line-height:1.5em;
+	    text-transform:none;
+	  }
+
+	  img {
+	    margin-top:10px;
+	  }
+	}
+
+	div.myblub {
+	  float:left;
+	  width:60%;
+	}
+
+	div.myblurb:after {
+	  clear:left;
+	}
 }

@@ -1,0 +1,32 @@
+/* Red: #f16154;
+/* Teal: #4fa396;
+/* Yellow/orange: #eea41d;
+/* Dark Gray: #333;
+
+/************************************
+jQuery Specific Styles
+************************************/
+
+/************************************
+Recipe Pages
+************************************/
+html body div.main div.main-content {
+	div.toggleButtons {
+	  button.currentView{
+	  	color:#fff;
+	  	background-color:#eea41d;
+	  	outline:none;
+	  }
+	}
+
+	div.recipeInstructions {
+	  div.inactive {
+	  	display:none;
+	  }
+
+	  div.currentSection {
+	  	display:block;
+	  }
+	}
+
+}
