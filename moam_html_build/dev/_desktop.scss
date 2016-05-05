@@ -43,9 +43,27 @@ h6 {
 	letter-spacing: 1px;
 }
 
+h1 {
+	margin: 0.3em 0 0;
+	padding-left: 30px;
+
+	font-size: 2.8em;
+	color: #577ab0;
+}
+
+h2 {
+	color: #43a29c;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.3em;
+	color: #872735;
+}
+
 p {
 	font-family: 'Open Sans', Arial, sans-serif;
-	line-height: 1.2;
+	line-height: 1.5;
 }
 
 ul {
@@ -56,11 +74,24 @@ a {
 	text-decoration: none;
 }
 
-a.support_btn {
+a.button {
 	padding: 10px 20px;
 
-	background-color: #872735;
+	text-align: center;
+	color: #fff;
+	background-color: #c8946d;
 	border: 1px solid #fff;
+}
+
+a.support_btn {
+	background-color: #872735;
+}
+
+a.support_btn:hover {
+	font-weight: 700;
+	color: #872735;
+	background-color: #fff;
+	border: 3px solid #872735;
 }
 
 div#mobile-navigation {
@@ -174,20 +205,14 @@ header {
 				a.support_btn {
 					display: inline;
 					margin-top: 10px;
-					padding: 10px 20px;
-
-					text-align: center;
 				}
 			}
 
 			li.button:hover {
 				background-color: none;
 
-				a.support_btn{
-					font-weight: 700;
+				a.support_btn {
 					color: #872735;
-					background-color: #fff;
-					border: 3px solid #872735;
 				}
 			}
 
@@ -199,7 +224,7 @@ header {
 }
 
 /************************************
-	Body of Homepage
+	Homepage
 ************************************/
 div.wrapper {
 	position: relative;
@@ -226,18 +251,14 @@ div.wrapper {
 			font-style: italic;
 			background-color: #c8946d;
 			color: #fff;
+
+			p {
+				line-height: 1.3em;
+			}
 		}
 	}
 
 	div.main-content {
-		h1 {
-			margin: 0.3em 0 0;
-			padding-left: 30px;
-
-			font-size: 2.8em;
-			color: #577ab0;
-		}
-
 		hr {
 			margin-top: -15px;
 
@@ -246,7 +267,7 @@ div.wrapper {
 
 		div.introduction {
 			margin-bottom: 4em;
-			padding: 0px 30px;
+			padding: 0px 4%;
 
 			p {
 				float: left;
@@ -294,6 +315,7 @@ div.wrapper {
 
 					font-family: 'Josefin Sans', Arial, sans-serif;
 					font-weight: 700;
+					font-size: 1.3em;
 				}
 
 				div.more-info {
@@ -344,7 +366,7 @@ div.wrapper {
 
 		div.latest-blogposts {
 			width: 100%;
-			padding: 20px 5%;
+			padding: 4em 5%;
 
 			li {
 				display: inline;
@@ -380,15 +402,56 @@ footer {
 }
 
 
-/************************************ 	  2.0   About Page
+/************************************ 
+	2.0   About Page
 ************************************/
 div.wrapper div.main-content {
+	div.about-image {
+		float: right;
+		width: 30%;
+		max-width: 310px;
+	    margin: 45px 5%;
+
+	    img {
+			display: block;
+			width: 95%;
+			max-width: 270px;
+			margin: auto;
+
+			border: 2px solid #c8946d;
+		}
+	}
+
 	div.about-section {
 		width: 65%;
-		margin: auto;
+		margin: 60px auto;
 
-		h2 {
-			color: #43a29c;
+		ul.fact-list {
+			margin-bottom: 60px;
+			padding-left: 18px;
+			list-style: square outside none;
+
+			li {
+				margin-bottom: 10px;
+			}
+		}
+
+		div.support-button-container {
+			display: block;
+			height: 60px;
+		    margin: auto;
+		    padding-top: 4px;
+
+		    text-align: center;
+
+		    a.support_btn {
+		    	display: block;
+			    width: 30%;
+			    margin: auto;
+
+			    text-align: center;
+			    color: #fff;
+		    }
 		}
 	}
 }

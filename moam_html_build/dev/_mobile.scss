@@ -3,4 +3,199 @@ Mobile/Tablet Friendly
 ************************************/
 @media screen and (max-width: 768px) {
 
+/************************************
+	Header
+************************************/
+header {
+	img#header-logo {
+		float: left;
+	}
+
+	div#main-navigation {
+		display: none;
+	}
+}	
+
+/************************************
+	Homepage
+************************************/
+div.wrapper {
+	div.featured {
+		position: relative;
+		width: 100%;
+		max-height: 390px;
+		overflow: hidden;
+
+		img.hero-image {
+			width: 100%;
+		}
+
+		div.hero-quote {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			padding: 0px 20px;
+
+			font-style: italic;
+			background-color: #c8946d;
+			color: #fff;
+		}
+	}
+
+	div.main-content {
+		div.introduction {
+			p {
+				width: 100%;
+				margin-right: 0;
+			}
+
+			img {
+				display: block;
+				width: 80%;
+				margin: auto;
+			}
+		}
+
+
+		div.site-sections {
+			div.block-link {
+				width: 70%;
+				margin: 20px 15%;
+
+				img {
+					width: 80%;
+					max-width: none;
+				}
+
+				p {
+					width: 80%;
+					max-width: none;
+				}
+
+				div.more-info {
+					width: 80%;
+					max-width: none;
+
+					p.link-blurb {
+						font-size: 1em;
+					}
+				}
+  			}
+		}
+
+		div.latest-blogposts {
+			width: 85%;
+			margin: 40px auto;
+			padding: 0;
+
+			li {
+				width: 30%;
+			}
+
+			li:nth-of-type(10) {
+				display: none;
+			}
+		}
+	}
 }
+
+/************************************ 
+	2.0   About Page
+************************************/
+div.wrapper div.main-content {
+	div.about-image {
+		width: 40%;
+	}
+
+	div.about-section {
+		width: 80%;
+
+		div.support-button-container {
+			a.support_btn {
+				width: 30%;
+			}
+		}
+	}
+}
+
+
+}/*-------------
+End Tablet Styles
+----------*/
+
+
+/*--------------------------------------------------------------
+## Smallest mobile styles
+--------------------------------------------------------------*/
+@media only screen and (max-width: 499px) {
+
+/************************************
+	Homepage
+************************************/
+body {
+	width: 100%;
+}
+div.wrapper {
+	div.featured {
+		position: relative;
+		width: 100%;
+		max-height: 390px;
+		overflow: hidden;
+
+		img.hero-image {
+			width: 100%;
+		}
+
+		div.hero-quote {
+			height: 100%;
+		}
+	}
+
+	div.main-content {
+		div.introduction {
+			padding: 0px 6%;
+		}
+
+
+		div.site-sections {
+			div.block-link {
+				width: 90%;
+				margin: 20px 5%;
+  			}
+		}
+
+		div.latest-blogposts {
+			width: 95%;
+
+			li {
+				width: 48%;
+				margin-right: 5%;
+			}
+
+			li:nth-of-type(10) {
+				display: inline;
+			}
+		}
+	}
+}
+
+/************************************ 
+	2.0   About Page
+************************************/
+div.wrapper div.main-content {
+	div.about-image {
+		float: none;
+		width: 80%;
+    	max-width: none;
+    	margin: 45px auto 0px;
+	}
+
+	div.about-section {
+		margin-top: 30px;
+	}
+}
+
+}/*-------------
+End Mobile Styles
+----------*/
