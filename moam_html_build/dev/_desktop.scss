@@ -11,6 +11,7 @@
 	1.0 General Styles and Homepage
 	2.0 About Page
 	3.0 Get Involved Page
+	4.0 Blog Landing Page
 ************************************/
 
 /************************************
@@ -65,6 +66,7 @@ h3 {
 p {
 	font-family: 'Open Sans', Arial, sans-serif;
 	line-height: 1.5;
+	color: #505050;
 }
 
 ul {
@@ -76,7 +78,8 @@ a {
 }
 
 a.button {
-	padding: 10px 20px;
+	display: block;
+	padding: 0.5em;
 
 	text-align: center;
 	color: #fff;
@@ -86,13 +89,20 @@ a.button {
 
 a.support_btn {
 	background-color: #872735;
+	border: 1px solid #fff;
+}
+
+a.button:hover {
+	color: #c8946d;
+	background-color: #fff;
+	border: 1px solid #c8946d;
 }
 
 a.support_btn:hover {
 	font-weight: 700;
 	color: #872735;
 	background-color: #fff;
-	border: 3px solid #872735;
+	border: 1px solid #872735;
 }
 
 div#mobile-navigation {
@@ -124,6 +134,10 @@ header {
 		float: left;
 	}
 
+	img#hamburger_icon {
+		display: none;
+	}
+
 	div#main-navigation {
 		float: right;
 		width: 65%;
@@ -142,7 +156,7 @@ header {
 
 			    a {
 			    	display: block;
-			    	padding: 10px;
+			    	padding: 0.6em;
 			  		
 			  		color: #fff;
 			    }
@@ -199,20 +213,16 @@ header {
 				}
 			}
 
-			li.button {
-				width: 16%;
-				padding-top: 8px;
+			li.support-li {
+				width: 20%;
 
-				a.support_btn {
-					display: inline;
-					margin-top: 10px;
-				}
+				text-align: center;
 			}
 
-			li.button:hover {
+			li.support-li:hover {
 				background-color: none;
 
-				a.support_btn {
+				a {
 					color: #872735;
 				}
 			}
@@ -251,10 +261,10 @@ div.wrapper {
 
 			font-style: italic;
 			background-color: #c8946d;
-			color: #fff;
 
 			p {
 				line-height: 1.3em;
+				color: #fff;
 			}
 		}
 	}
@@ -284,9 +294,11 @@ div.wrapper {
 
 
 		div.site-sections {
+			position: relative;
 			width: 100%;
 			height: auto;
-			overflow: auto;
+			overflow: hidden;
+			z-index: 20;
 
 			div.block-link {
 				float: left;
@@ -297,6 +309,7 @@ div.wrapper {
 				img {
 					display: block;
 					margin: auto;
+					width: 100%;
 					max-width: 220px;
 
 					border: 10px solid #fff;
@@ -322,6 +335,7 @@ div.wrapper {
 				div.more-info {
 					display: block;
 					margin: auto;
+					width: 100%;
 					max-width: 220px;
 					padding-bottom: 10px;
 
@@ -335,17 +349,20 @@ div.wrapper {
 						font-size: 0.9em;
 					}
 
-					a {
-						display: block;
+					a.button {
 						width: 60%;
 						margin: auto;
-						padding: 10px;
 
 						font-family: 'Josefin Sans', Arial, sans-serif;
 						font-weight: 700;
-						text-align: center;
-						color: #fff;
 						background-color: #43a29c;
+						border: 1px solid #fff;
+					}
+
+					a.button:hover {
+						color: #43a29c;
+						background-color: #fff;
+						border: 1px solid #43a29c;
 					}
 				}
   			}
@@ -366,8 +383,10 @@ div.wrapper {
 		}
 
 		div.latest-blogposts {
+			position: relative;
 			width: 100%;
 			padding: 4em 5%;
+			z-index: 5;
 
 			li {
 				display: inline;
@@ -377,7 +396,7 @@ div.wrapper {
 				max-height: 145px;
 				overflow: hidden;
 				margin-right: 2%;
-				margin-bottom: 15px;
+				margin-bottom: 1em;
 
 				border: 2px solid #43a29c;
 			}
@@ -411,7 +430,7 @@ div.wrapper div.main-content {
 		float: right;
 		width: 30%;
 		max-width: 310px;
-	    margin: 45px 5%;
+	    margin: 3em 5%;
 
 	    img {
 			display: block;
@@ -433,7 +452,7 @@ div.wrapper div.main-content {
 			list-style: square outside none;
 
 			li {
-				margin-bottom: 10px;
+				margin-bottom: 0.6em;
 			}
 		}
 
@@ -443,15 +462,9 @@ div.wrapper div.main-content {
 		    margin: auto;
 		    padding-top: 4px;
 
-		    text-align: center;
-
 		    a.support_btn {
-		    	display: block;
 			    width: 30%;
 			    margin: auto;
-
-			    text-align: center;
-			    color: #fff;
 		    }
 		}
 	}
@@ -490,13 +503,53 @@ div.wrapper div.main-content {
 
 			a.button {
 				float: right;
-				width: 23%;
+				width: 25%;
 				margin-top: 1em;
 			}
 
 			span.reference {
 				font-size: 0.8em;
 				font-style: italic;
+			}
+		}
+	}
+}
+
+
+/************************************ 
+	4.0   Blog Landing Page
+************************************/
+div.wrapper div.main-content {
+	div.blogpost-previews {
+		width: 90%;
+		margin: 4em auto;
+
+		div.post-preview {
+			float: left;
+			width: 23%;
+			margin-right: 2%;
+			padding: 1em;
+
+			img {
+				width: 100%;
+				border: 2px solid #43a29c;
+			}
+
+			h3 {
+				margin-bottom: 0.4em;
+				line-height: 1.1;
+				color: #872735;
+			}
+
+			p {
+				margin-top: 0;
+				font-size: 0.9em;
+				line-height: 1.1;
+			}
+
+			h5 {
+				font-weight: 700;
+				color: #e2c599;
 			}
 		}
 	}

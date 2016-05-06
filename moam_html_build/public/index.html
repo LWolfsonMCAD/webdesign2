@@ -19,8 +19,9 @@
     if (typeof jQuery == 'undefined') {
         document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
     }
-    </script>
+    </script>    
     <script src="js/jquery.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -31,42 +32,44 @@
         <ul>
             <li>My Mission Life
                 <ul class="subnavigation">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="photogallery.html">Photo Gallery</a></li>
+                    <li><a href="bloglanding.html">Blog</a></li>
+                    <li><a href="#">Photo Gallery</a></li>
                 </ul>
             </li>
             <li><a href="getinvolved.html">Get Involved</a></li>
             <li>About
                 <ul class="subnavigation">
                     <li><a href="aboutme.html">About Me</a></li>
-                    <li><a href="aboutvincentguerrero.html">About Vincent Guerrero Mission</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">About Vincent Guerrero Mission</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </li>
-            <li class="button"><a href="https://worldoutreach.org/index.php/missionary-support-2" class="support_btn" target="_blank">Support</a></li>
+            <li class="support-li"><a href="https://worldoutreach.org/index.php/missionary-support-2" class="support_btn" target="_blank">Support</a></li>
         </ul>
     </div><!-- End Mobile Navigation -->
 
     <header>
-        <img src="img/moam_logo.png" id="header-logo" alt="Minnesotan On A Mission logo">
+        <a href="index.html"><img src="img/moam_logo.png" id="header-logo" alt="Minnesotan On A Mission logo"></a>
+
+        <a href="#"><img src="img/mobile_menu_icon.png" id="hamburger_icon" alt="hamburger menu icon"></a>
 
         <div id="main-navigation">
             <ul>
                 <li class="submenu">My Mission Life
                     <ul class="subnavigation">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="photogallery.html">Photo Gallery</a></li>
+                        <li><a href="bloglanding.html">Blog</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
                     </ul>
                 </li>
                 <li><a href="getinvolved.html">Get Involved</a></li>
                 <li class="submenu">About
                     <ul class="subnavigation">
                         <li><a href="aboutme.html">About Me</a></li>
-                        <li><a href="aboutvincentguerrero.html">About Vincent Guerrero</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">About Vincent Guerrero</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </li>
-                <li class="button"><a href="https://worldoutreach.org/index.php/missionary-support-2" class="support_btn" target="_blank">Support</a></li>
+                <li class="support-li"><a href="https://worldoutreach.org/index.php/missionary-support-2" class="support_btn" target="_blank">Support</a></li>
             </ul>
         </div><!-- End Main Navigation -->
     </header>
@@ -98,7 +101,7 @@
                     <div class="more-info">
                         <p class="link-blurb">Find out more about the day-to-day life of being a missionary on the blog.</p>
 
-                        <a href="blog.html">Read The Blog</a>
+                        <a href="blog.html" class="button">Read The Blog</a>
                     </div>
                 </div>
 
@@ -109,7 +112,7 @@
                     <div class="more-info">
                         <p class="link-blurb">Find out about ways that you can support my mission and also support Vincent Guerrero Mission.</p>
 
-                        <a href="getinvolved.html">Learn More</a>
+                        <a href="getinvolved.html" class="button">Learn More</a>
                     </div>
                 </div>
 
@@ -120,7 +123,7 @@
                     <div class="more-info">
                         <p class="link-blurb">Read more about Jess and why she chose to become a missionary in the first place. </p>
 
-                        <a href="blog.html">Read More</a>
+                        <a href="blog.html" class="button">Read More</a>
                     </div>
                 </div>
             </div><!-- End Site Sections -->

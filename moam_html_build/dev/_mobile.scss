@@ -11,6 +11,12 @@ header {
 		float: left;
 	}
 
+	img#hamburger_icon {
+		display: block;
+		float: right;
+		margin: 0.6em 5% 0px;
+	}
+
 	div#main-navigation {
 		display: none;
 	}
@@ -35,7 +41,7 @@ div.wrapper {
 			top: 0;
 			right: 0;
 			width: 50%;
-			padding: 0px 20px;
+			padding: 0px 2em;
 
 			font-style: italic;
 			background-color: #c8946d;
@@ -61,7 +67,7 @@ div.wrapper {
 		div.site-sections {
 			div.block-link {
 				width: 70%;
-				margin: 20px 15%;
+				margin: 2em 15%;
 
 				img {
 					width: 80%;
@@ -86,7 +92,7 @@ div.wrapper {
 
 		div.latest-blogposts {
 			width: 85%;
-			margin: 40px auto;
+			margin: 3em auto;
 			padding: 0;
 
 			li {
@@ -136,6 +142,17 @@ div.wrapper div.main-content {
 }
 
 
+/************************************ 
+	4.0   Blog Landing Page
+************************************/
+div.wrapper div.main-content {
+	div.blogpost-previews {
+		div.post-preview {
+			width: 45%;
+		}
+	}
+}
+
 }/*-------------
 End Tablet Styles
 ----------*/
@@ -165,6 +182,7 @@ div.wrapper {
 
 		div.hero-quote {
 			height: 100%;
+			padding: 0px 0.8em;
 		}
 	}
 
@@ -204,11 +222,11 @@ div.wrapper div.main-content {
 		float: none;
 		width: 80%;
     	max-width: none;
-    	margin: 45px auto 0px;
+    	margin: 3em auto 0px;
 	}
 
 	div.about-section {
-		margin-top: 30px;
+		margin-top: 2em;
 	}
 }
 
@@ -227,6 +245,39 @@ div.wrapper div.main-content {
 				width: auto;
 				max-width: 40%;
 				margin: 2em auto;
+			}
+		}
+	}
+}
+
+
+/************************************ 
+	4.0   Blog Landing Page
+************************************/
+div.wrapper div.main-content {
+	div.blogpost-previews {
+		div.post-preview {
+			display: block;
+			float: none;
+			width: 90%;
+			height: auto;
+			overflow: hidden;
+			margin: auto;
+
+			border-bottom: 1px solid #ccc;
+
+			img {
+				margin-top: 3em;
+			}
+
+			h5 {
+				margin-bottom: 3em;
+			}
+		}
+
+		div.post-preview:first-of-type {
+			img {
+				margin-top: 0;
 			}
 		}
 	}
