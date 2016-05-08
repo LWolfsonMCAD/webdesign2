@@ -3,24 +3,134 @@ Mobile/Tablet Friendly
 ************************************/
 @media screen and (max-width: 768px) {
 
+span#backToTop {
+	a {
+		font-weight: 700;
+	}
+}
+
+/************************************
+	Mobile Menu/Navigation
+************************************/
+img#hamburger_icon {
+	display: block;
+	position: relative;
+	float: right;
+	padding: 0.6em 5% 0px;
+	z-index: 20;
+
+	cursor: pointer;
+}
+
+div#mobile-navigation {
+	position: absolute;
+	width: 100%;
+	height: auto;
+    margin-top: 5.5em;
+    padding: 1em 10%;
+    z-index: 9;
+
+    background-color: #43a29c;
+
+		ul {
+			margin-top: 0.5em;
+		
+			li {
+			    position: relative;
+			    width: 80%;
+			    margin: 0.5em 0;
+
+			    font-family: 'Josefin Sans', Arial, sans-serif;
+			    font-weight: 700;
+			    color: #fff;
+
+			    a {
+			    	display: block;
+			    	padding: 0.6em;
+			  		
+			  		color: #fff;
+			    }
+
+			    a.currentPage {
+					color: #43a29c;
+					background-color: #fff;
+				}
+
+			    ul.subnavigation {
+					width: 100%;
+					padding: 0;
+
+					li {
+						width: 100%;
+						padding-left: 5%;
+
+						text-align: left;
+
+						a {
+							width: 100%;
+						}
+					}
+
+					li a:hover {
+				  		color: #43a29c;
+				  		background-color: #fff;
+				  	}
+			    }
+		  	}
+
+		  	li.submenu {
+		  		color: #505050;
+		  	}
+
+		  	li.submenu:hover {
+				cursor: default; 
+		  	}
+
+		  	li.no-submenu {
+		  		margin-left: -0.6em;
+		  	}
+
+		  	li.no-submenu a:hover {
+		  		color: #43a29c;
+		  		background-color: #fff;
+		  	}
+
+			li.support-li {
+				width: 30%;
+				margin: 2em auto;
+
+				text-align: center;
+			}
+
+			li.support-li:hover {
+				background-color: none;
+
+				a {
+					color: #872735;
+				}
+			}
+
+			li:hover {
+				cursor: pointer;
+			}
+		}
+	}
+    
+
 /************************************
 	Header
 ************************************/
 header {
-	img#header-logo {
-		float: left;
-	}
-
-	img#hamburger_icon {
-		display: block;
-		float: right;
-		margin: 0.6em 5% 0px;
-	}
-
 	div#main-navigation {
 		display: none;
 	}
 }	
+
+span#backToTop {
+	position: fixed;
+	top: 0;
+	width: 90%;
+}
 
 /************************************
 	Homepage
@@ -29,6 +139,7 @@ div.wrapper {
 	div.featured {
 		position: relative;
 		width: 100%;
+		height: auto;
 		max-height: 390px;
 		overflow: hidden;
 
@@ -41,11 +152,15 @@ div.wrapper {
 			top: 0;
 			right: 0;
 			width: 50%;
-			padding: 0px 2em;
+			padding: 0.8em;
 
 			font-style: italic;
 			background-color: #c8946d;
 			color: #fff;
+
+			p {
+				margin: 0;
+			}
 		}
 	}
 
@@ -95,12 +210,16 @@ div.wrapper {
 			margin: 3em auto;
 			padding: 0;
 
-			li {
-				width: 30%;
-			}
+			ul {
+				padding-left: 10%;
 
-			li:nth-of-type(10) {
-				display: none;
+				li {
+					width: 30%;
+				}
+
+				li:nth-of-type(10) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -159,130 +278,162 @@ End Tablet Styles
 
 
 /*--------------------------------------------------------------
-## Smallest mobile styles
+## Smaller mobile styles
 --------------------------------------------------------------*/
 @media only screen and (max-width: 499px) {
+
+	span#backToTop {
+		width: 100%;
+	}
 
 /************************************
 	Homepage
 ************************************/
-body {
-	width: 100%;
-}
-div.wrapper {
-	div.featured {
-		position: relative;
+	body {
 		width: 100%;
-		max-height: 390px;
-		overflow: hidden;
-
-		img.hero-image {
-			width: 100%;
-		}
-
-		div.hero-quote {
-			height: 100%;
-			padding: 0px 0.8em;
-		}
 	}
-
-	div.main-content {
-		div.introduction {
-			padding: 0px 6%;
-		}
-
-
-		div.site-sections {
-			div.block-link {
-				width: 90%;
-				margin: 20px 5%;
-  			}
-		}
-
-		div.latest-blogposts {
-			width: 95%;
-
-			li {
-				width: 48%;
-				margin-right: 5%;
+	div.wrapper {
+		div.featured {
+			img.hero-image {
+				width: 100%;
 			}
 
-			li:nth-of-type(10) {
-				display: inline;
+			div.hero-quote {
+				height: 100%;
+
+				p {
+					margin-top: -0.2em;
+				}
+			}
+		}
+
+		div.main-content {
+			div.introduction {
+				padding: 0px 6%;
+			}
+
+
+			div.site-sections {
+				div.block-link {
+					width: 80%;
+					margin: 20px 10%;
+	  			}
+			}
+
+			div.latest-blogposts {
+				width: 95%;
+
+				h2 {
+					padding-left: 3%;
+				}
+
+				ul {
+					width: 80%;
+					margin-left: 18%;
+					padding-left: 0;
+
+					li {
+						width: 40%;
+					}
+
+					li:nth-of-type(10) {
+						display: inline;
+					}
+				}
 			}
 		}
 	}
-}
 
 /************************************ 
 	2.0   About Page
 ************************************/
-div.wrapper div.main-content {
-	div.about-image {
-		float: none;
-		width: 80%;
-    	max-width: none;
-    	margin: 3em auto 0px;
-	}
+	div.wrapper div.main-content {
+		div.about-image {
+			float: none;
+			width: 80%;
+	    	max-width: none;
+	    	margin: 3em auto 0px;
+		}
 
-	div.about-section {
-		margin-top: 2em;
+		div.about-section {
+			margin-top: 2em;
+		}
 	}
-}
 
 
 /************************************ 
 	3.0   Get Involved Page
 ************************************/
-div.wrapper div.main-content {
-	div.get-involved-options {
-		width: 85%;
+	div.wrapper div.main-content {
+		div.get-involved-options {
+			width: 85%;
 
-		div.way-to-get-involved {
-			a.button {
-				display: block;
-				float: none;
-				width: auto;
-				max-width: 40%;
-				margin: 2em auto;
+			div.way-to-get-involved {
+				a.button {
+					display: block;
+					float: none;
+					width: auto;
+					max-width: 40%;
+					margin: 2em auto;
+				}
 			}
 		}
 	}
-}
 
 
 /************************************ 
 	4.0   Blog Landing Page
 ************************************/
-div.wrapper div.main-content {
-	div.blogpost-previews {
-		div.post-preview {
-			display: block;
-			float: none;
-			width: 90%;
-			height: auto;
-			overflow: hidden;
-			margin: auto;
+	div.wrapper div.main-content {
+		div.blogpost-previews {
+			div.post-preview {
+				display: block;
+				float: none;
+				width: 90%;
+				height: auto;
+				overflow: hidden;
+				margin: auto;
 
-			border-bottom: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
 
-			img {
-				margin-top: 3em;
+				img {
+					margin-top: 3em;
+				}
+
+				h5 {
+					margin-bottom: 3em;
+				}
 			}
 
-			h5 {
-				margin-bottom: 3em;
+			div.post-preview:first-of-type {
+				img {
+					margin-top: 0;
+				}
 			}
 		}
+	}
 
-		div.post-preview:first-of-type {
-			img {
-				margin-top: 0;
+}
+
+/*-------------
+Tiny Mobile Styles
+----------*/
+
+@media only screen and (max-width: 372px) {
+
+	div.wrapper {
+		div.featured {
+			div.hero-quote {
+				height: 100%;
+
+				p {
+					font-size: 0.8em;
+				}
 			}
 		}
 	}
 }
 
-}/*-------------
+/*-------------
 End Mobile Styles
 ----------*/

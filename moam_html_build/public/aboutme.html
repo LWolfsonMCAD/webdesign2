@@ -13,32 +13,28 @@
 
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700, 700italic|Open+Sans|Over+the+Rainbow' rel='stylesheet' type='text/css'>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- jQuery failover -->
-    <script>
-    if (typeof jQuery == 'undefined') {
-        document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
-    }
-    </script>
-    <script src="js/jquery.js"></script>
 </head>
 <body>
+    <span id="backToTop"><a href="#" id="backToTop">Back To Top</a></span>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <img src="img/mobile_menu_icon.png" id="hamburger_icon" alt="hamburger menu icon">
+
     <div id="mobile-navigation">
         <ul>
-            <li>My Mission Life
+            <li class="no-submenu"><a href="index.html">Home</a></li>
+            <li><a href="bloglanding.html">My Mission Life</a>
                 <ul class="subnavigation">
                     <li><a href="bloglanding.html">Blog</a></li>
                     <li><a href="#">Photo Gallery</a></li>
                 </ul>
             </li>
-            <li><a href="getinvolved.html">Get Involved</a></li>
-            <li>About
+            <li class="no-submenu"><a href="getinvolved.html">Get Involved</a></li>
+            <li class="submenu">About
                 <ul class="subnavigation">
-                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="aboutme.html" class="currentPage">About Me</a></li>
                     <li><a href="#">About Vincent Guerrero Mission</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -46,11 +42,9 @@
             <li class="support-li"><a href="https://worldoutreach.org/index.php/missionary-support-2" class="support_btn" target="_blank">Support</a></li>
         </ul>
     </div><!-- End Mobile Navigation -->
-
+    
     <header>
         <a href="index.html"><img src="img/moam_logo.png" id="header-logo" alt="Minnesotan On A Mission logo"></a>
-
-        <a href="#"><img src="img/mobile_menu_icon.png" id="hamburger_icon" alt="hamburger menu icon"></a>
 
         <div id="main-navigation">
             <ul>
@@ -63,7 +57,7 @@
                 <li><a href="getinvolved.html">Get Involved</a></li>
                 <li class="submenu">About
                     <ul class="subnavigation">
-                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="aboutme.html" class="currentPage">About Me</a></li>
                         <li><a href="#">About Vincent Guerrero</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -118,6 +112,16 @@
             </div><!-- End About Section -->
         </div><!-- End Main Content -->
     </div><!-- End Wrapper Div -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- jQuery failover -->
+    <script>
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>    
+
+    <script src="js/jquery.js"></script>
 </body>
 
 <footer>

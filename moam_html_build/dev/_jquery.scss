@@ -3,3 +3,15 @@
 /************************************
 jQuery Specific Styles
 ************************************/
+div.wrapper div.main-content {
+	div.jsBlocks {
+		position: relative;
+    	min-height: 388px;
+    	overflow: visible;
+
+		div.blocks {
+			position: absolute;
+    		width: 100%;
+		}
+	}
+}
